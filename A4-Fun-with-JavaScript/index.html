@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="CSUS | CSC196W | Assignment 4: Fun with JavaScript">
+		<meta name="author" content="Duc Nguyen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fancify Shamcify</title>
+		<link rel="stylesheet" type="text/css" href="fancifymytext.css">
+	</head>
+	<body>
+		<h1>Fancify my Text</h1>
+
+		<!-- Your UI controls go here -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="textarea" rows="4" cols="30" placeholder="Type some text here..."></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Fancify</legend>
+			<button id="bigger-btn" onclick="changeTextSize()">Bigger!</button>
+			<button id="moo-btn" onclick="mooText()">Moo</button>
+			<label>FancyShmancy</label>
+			<input type="radio" name="for-fancify" id="fancy-radio" onchange="setFancyText()">
+			<label>BoringBetty</label>
+			<input type="radio" name="for-fancify" id="boring-radio" onchange="setBoringText()">
+		</fieldset>
+
+		<script src="fancifymytext.js"></script>
+	</body>
+</html>
